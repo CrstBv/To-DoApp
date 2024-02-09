@@ -6,7 +6,7 @@ import userRoutes from "./routes/users";
 import session from "express-session";
 import env from "./util/validateEnv";
 import MongoStore from "connect-mongo";
-import { requiresAuth } from "./middleware.ts/auth";
+import { requiresAuth } from "./middleware/auth";
 
 const app = express();
 

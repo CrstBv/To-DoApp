@@ -178,10 +178,9 @@ export const getcompletedToDos: RequestHandler = async (req, res, next) => {
   try {
     assertIsDefined(authenticatedUserId);
 
-    const toDos = await ToDoModel.find({userId: authenticatedUserId}).exec();
+    const toDos = await ToDoModel.find({userId: authenticatedUserId}, {completed: true}).exec();
 
-    const completedToDos = toDos.filter((toDo) => toDo.completed === true);
-    res.status(200).json(completedToDos);
+    res.status(200).json(toDos);
   } catch (error) {
     next(error);
   }
