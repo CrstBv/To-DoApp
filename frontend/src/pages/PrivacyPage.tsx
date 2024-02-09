@@ -1,11 +1,10 @@
-import ToDosPageLoggedInView from "../components/ToDosPageLoggedInView";
+import styles from "../styles/utils.module.css"
 
 const PrivacyPage = () => {
 
     return ( 
-        <div>
-            <ToDosPageLoggedInView />
-            <p>Privacy?</p>
+        <div className={styles.textCenter}>
+            <p>All rights reserved</p>
         </div>
      );
 }

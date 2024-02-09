@@ -13,3 +13,18 @@
 .width100 {
     width: 100%;
 }
+
+.textJustify{
+    display: flex;
+    flex-direction: column;
+    padding-top: 86px;
+    max-width: 720px;
+    font-size: x-large;
+    text-align: justify;
+}
+
+.textCenter{
+    display: flex;
+    font-size: large;
+    justify-content: center;
+}
